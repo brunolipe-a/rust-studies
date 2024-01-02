@@ -1,0 +1,15 @@
+[package]
+name = "stackoverflow"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+rocket = { version = "0.5.0-rc.2", features = ["json"] }
+uuid = { version = "1.6.1", features = ["v4", "serde"] }
+diesel = { version = "2.1.0", features = ["postgres", "uuid", "chrono"] }
+chrono = { version = "0.4.31", features = ["serde"] }
+dotenvy = "0.15"
